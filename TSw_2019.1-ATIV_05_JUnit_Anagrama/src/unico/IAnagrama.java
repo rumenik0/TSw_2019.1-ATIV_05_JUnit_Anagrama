@@ -1,5 +1,5 @@
 package unico;
 
 public interface IAnagrama {
-	public boolean isPalindromo(String str);
+	public boolean isAnagramas(String str1, String str2);
 }
