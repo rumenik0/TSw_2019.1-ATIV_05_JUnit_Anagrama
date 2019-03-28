@@ -22,4 +22,19 @@ class AnagramaTeste {
 	void testIsAnagramasAcentuacao() {
 		anagrama.isAnagramas("eva", "áve");
 	}
+	
+	@Test
+	void testIsAnagramasEmpty() {
+		assertEquals(false, anagrama.isAnagramas("", ""));
+	}
+	
+	@Test
+	void testIsAnagramasNulo1() {
+		assertEquals(false, anagrama.isAnagramas(null, "Roma"));
+	}
+	
+	@Test
+	void testIsAnagramasNulo2() {
+		assertEquals(false, anagrama.isAnagramas("", null));
+	}
 }
