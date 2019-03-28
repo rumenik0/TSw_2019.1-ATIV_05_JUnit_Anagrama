@@ -7,6 +7,8 @@ public class Anagrama implements IAnagrama {
 	@Override
 	public boolean isAnagramas(String str1, String str2) {
 		
+		str1 = str1.toUpperCase();
+		str2 = str2.toUpperCase();
 		
 		char[] a = str1.toCharArray();
 	    char[] b = str2.toCharArray();

@@ -1,14 +1,20 @@
 package unico;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
 class AnagramaTeste {
+	Anagrama anagrama = new Anagrama();
 
 	@Test
 	void testIsAnagramas() {
-		fail("Not yet implemented");
+		assertEquals(true, anagrama.isAnagramas("amor", "roma"));
 	}
 
+	@Test
+	void testIsAnagramasMaiuscula() {
+		assertEquals(true, anagrama.isAnagramas("Amor", "Roma"));
+	}
 }
