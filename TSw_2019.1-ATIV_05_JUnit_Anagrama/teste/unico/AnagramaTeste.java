@@ -34,6 +34,11 @@ class AnagramaTeste {
 	}
 	
 	@Test
+	void testIsAnagramasNumero() {
+		assertEquals(true, anagrama.isAnagramas("ma2", "2ma"));
+	}
+	
+	@Test
 	void testIsAnagramasNulo2() {
 		assertEquals(false, anagrama.isAnagramas("", null));
 	}
