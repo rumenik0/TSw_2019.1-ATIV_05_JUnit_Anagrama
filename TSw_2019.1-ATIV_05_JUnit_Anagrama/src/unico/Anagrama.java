@@ -12,8 +12,10 @@ public class Anagrama implements IAnagrama {
 		
 		char[] a = str1.toCharArray();
 	    char[] b = str2.toCharArray();
+	    
 	    Arrays.sort(a);
 	    Arrays.sort(b);
+	    
 	    if (Arrays.equals(a, b)) 
 	    	return true;
 	    else 

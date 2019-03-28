@@ -17,4 +17,9 @@ class AnagramaTeste {
 	void testIsAnagramasMaiuscula() {
 		assertEquals(true, anagrama.isAnagramas("Amor", "Roma"));
 	}
+	
+	@Test
+	void testIsAnagramasAcentuacao() {
+		anagrama.isAnagramas("eva", "áve");
+	}
 }
